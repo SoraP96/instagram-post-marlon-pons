@@ -1,0 +1,55 @@
+*{
+    border: dotted 1px greenyellow;
+}
+
+/*Header Styles*/
+
+body{
+    height: auto;
+    max-width: 640px;
+    margin: 0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header-container{
+
+    position: sticky; /*fija la caja header-content al limite establecido por top*/
+    background: #999;
+    top: 0;
+    box-shadow: 0 20px 50px #999a;
+}
+.header-nav{
+    display: flex;  /*para hacer el contenido de header-content flex*/
+    justify-content: space-between; /*Muestra los flex items con espacio entre líneas (item-espacio-item) https://www.w3schools.com/cssref/css3_pr_justify-content.php*/
+    align-items: center;
+    padding: 0 10px;
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box; /*para que el todo el contenido de esta caja no exceda los limites de esta, no importa el padding o margin que se le agregue, siempre se va a ajustar a la caja padre*/
+}
+.header-item-1,.header-item-2{
+    padding: 5px;
+}
+.header-item-2{
+    font-size: 20px;
+}
+.header-login{
+    display: flex;
+}
+i{
+    padding: 0 10px;
+    margin-left: 10px;
+}
+button{
+    background: none;
+    border: none;
+    color:inherit; /*inherit hace que herede la propiedad del contenedor padre, en este caso el color*/
+    cursor: pointer; /*cambia el cursor a la manito*/
+}
+button:hover{
+    font-size: 18px;
+    color: aqua;
+}
+
+/*Main Styles*/
+
+

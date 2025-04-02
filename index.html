@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script> <!--copiado de la practica de CSS modulo_1, ni idea de como se utiliza realmente-->
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+    <title>Instagram's feed</title>
+</head>
+<body>
+    <!--Header con una barra de navegacion-->
+    <header class="header-container">
+        <nav class="header-nav">
+            <h1 class="header-item-1">Photo Wall</h1>
+        </div>
+        <div class="header-login">
+            <span class="header-item-2">Login</span>
+            <button type="button" onclick="alert('Bienvenido')"><i class="fa-regular fa-user"></i></button>
+        </nav>
+    </header>
+    <!--Aqui van los post-->
+    <main>
+        <article class="post"> <!--Article va mejor que div o section, ya que cada pots es un contenido independiente-->
+            <header class="photo-header">
+                <i class="fa-solid fa-circle-user"></i>
+                <h2 class="username">nombre_usuario</h2>
+            </header>
+            <section class="post-image">
+                <img src="istockphoto-1925581892-1024x1024.jpg" alt="Chocolate">
+            </section>
+            
+            <section class="post-actions">
+                <button type="button-like"><i class="fa-regular fa-heart"></i></button>
+                <button type="button-comment"><i class="fa-regular fa-comment"></i></button>
+            </section>
+            
+            <section class="post-caption">
+                <p>Descripción de la foto...</p>
+            </section>
+        </article>
+    </main>
+   
+
+</body>
+</html>
+
+
+
+
+
