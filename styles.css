@@ -1,26 +1,22 @@
-*{
-    border: dotted 1px greenyellow;
-}
 
 /*Header Styles*/
 
 body{
     height: auto;
-    max-width: 640px;
+    max-width: 760px;
     margin: 0 auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .header-container{
-
     position: sticky; /*fija la caja header-content al limite establecido por top*/
-    background: #999;
+    background: #fafafa;
     top: 0;
     box-shadow: 0 20px 50px #999a;
 }
 .header-nav{
     display: flex;  /*para hacer el contenido de header-content flex*/
     justify-content: space-between; /*Muestra los flex items con espacio entre líneas (item-espacio-item) https://www.w3schools.com/cssref/css3_pr_justify-content.php*/
-    align-items: center;
+    align-items: center; /*centra los elementos a la mitad del height de la caja padre*/
     padding: 0 10px;
     height: 50px;
     width: 100%;
@@ -35,21 +31,78 @@ body{
 .header-login{
     display: flex;
 }
-i{
+.fa-user{
     padding: 0 10px;
     margin-left: 10px;
+
 }
 button{
     background: none;
     border: none;
     color:inherit; /*inherit hace que herede la propiedad del contenedor padre, en este caso el color*/
     cursor: pointer; /*cambia el cursor a la manito*/
+    font-size: 25px;
 }
 button:hover{
-    font-size: 18px;
-    color: aqua;
+    /*font-size: 25px;*/
+    transform: scale(1.1);  /* Escala en x,y en lugar de cambiar el tamaño */
+    color: #ed4956;
+    transition: transform 0.2s ease;  /* para suavizar la animación */
+    /*https://www.w3schools.com/cssref/css3_pr_transform.php*/
 }
 
 /*Main Styles*/
 
+main{
+    display: flex;
+    height: auto;
+    box-sizing: border-box;
+    flex-direction: column;
+    max-width: 760px;
+    margin: 0 auto;
+}
+.post{
+    margin: 0 auto 10px auto;
+    width: 100%;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px; 
+    padding-bottom: 10px; 
+}
 
+.photo-header{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.fa-circle-user{
+    font-size: 50px;
+}
+
+.post-image{
+    overflow: hidden; /* Para asegurar que nada se salga del contenedor Visto en el modulo de CSS Layouts*/
+    display: flex;
+    justify-content: center;
+    background-color: #fafafa;
+}
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*https://www.w3schools.com/css/css3_object-fit.asp*/
+    display: block; /* Elimina espacio extra debajo de la imagen */
+}
+
+.post-caption p{
+    margin: 0;
+}
+
+.post-caption :last-child{
+    font-size: small;
+    font-style: italic;
+}
+
+.button-like:active{
+    background-color: red;
+}
